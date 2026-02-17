@@ -44,6 +44,18 @@ Optional short run:
 SHADOW_MAX_BLOCKS=10 cargo run -p evm_flashloans_l2_arb --bin shadow_route
 ```
 
+Windows executable wrapper (live output + saved logs):
+
+```powershell
+scripts\run_shadow_1h.cmd
+```
+
+Optional args:
+
+- `-Blocks 900` for ~30 minutes
+- `-SummaryEveryBlocks 30`
+- `-VerboseBlockLogs`
+
 Additional shadow logging controls:
 
 - `SHADOW_SUMMARY_EVERY_BLOCKS` (default `25`): emit summary JSON every N blocks.
