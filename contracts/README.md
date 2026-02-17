@@ -9,6 +9,22 @@ forge build
 forge test -vv
 ```
 
+## Deploy With Owner/Operator Split
+
+Set these environment variables before running the deploy script:
+
+```bash
+export BALANCER_OWNER=0xYourMultisigAddress
+export BALANCER_OPERATOR=0xYourBotSignerAddress
+export BALANCER_VAULT=0xBA12222222228d8Ba445958a75a0704d566BF2C8
+```
+
+Run:
+
+```bash
+forge script script/DeployBalancerFlashLoanSimple.s.sol:DeployBalancerFlashLoanSimpleScript --rpc-url "$BASE_RPC_HTTPS_URL" --broadcast
+```
+
 ## Base Fork Simulation
 
 In terminal 1:

@@ -33,4 +33,7 @@ target
 /contracts/broadcast/
 
 # External reference repos
-/balancer-docs/
+/docs/third-party/
+
+# Runtime logs
+/logs/

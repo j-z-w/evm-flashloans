@@ -1,0 +1,30 @@
+{
+  "network": "base-mainnet",
+  "chain_id": 8453,
+  "poll_interval_ms": 2000,
+  "max_block_age_secs": 30,
+  "route": {
+    "name": "weth_usdc_v2_to_v3_shadow",
+    "token_in_symbol": "WETH",
+    "token_mid_symbol": "USDC",
+    "token_out_symbol": "WETH",
+    "token_in_address": "0x4200000000000000000000000000000000000006",
+    "token_mid_address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "token_in_decimals": 18,
+    "token_mid_decimals": 6,
+    "v2_pair": "0x88A43bbDF9D098eEC7bCEda4e2494615dfD9bB9C",
+    "v2_fee_bps": 30,
+    "v3_pool": "0xd0b53D9277642d899DF5C87A3966A349A798F224",
+    "v3_pool_fee": 500,
+    "v3_quoter_v2": "0x3d4e44Eb1374240CE5F1B871ab261CD16335B76a"
+  },
+  "input_sizes_wei": [
+    "1000000000000000",
+    "5000000000000000",
+    "10000000000000000"
+  ],
+  "flash_loan_fee_bps": 9,
+  "gas_units_estimate": 500000,
+  "max_gas_price_wei": "2000000000",
+  "min_profit_wei": "50000000000000"
+}
